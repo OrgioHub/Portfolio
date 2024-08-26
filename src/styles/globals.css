@@ -3,9 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-black: #111827;
+  --bg-one: #ffffff;
+  --bg-two: #f9fafb;
+  --line-color: #f3f4f6;
+  --text-color: #4b5563;
+  --head-bg: #e5e7eb;
+  --tom-color: #111827;
+  --download-color: #f9fafb;
+}
+
+[data-theme="dark"] {
+  --bg-black: #f9fafb;
+  --bg-one: #030712;
+  --bg-two: #111827;
+  --line-color: #1f2937;
+  --text-color: #d1d5db;
+  --head-bg: #374151;
+  --tom-color: #f9fafb;
+  --download-color: #111827;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +46,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
